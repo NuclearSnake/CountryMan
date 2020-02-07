@@ -1,0 +1,14 @@
+query Countries($codevalue: String) {
+    continent(code: $codevalue) {
+        countries {
+            code
+            name
+            languages {
+                name
+            }
+            currency
+            emoji
+            phone
+        }
+    }
+}
